@@ -1,0 +1,53 @@
+.cnCardRoot{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    border: 1px solid #000;
+    box-shadow: 0 2px 4px rgba($color: #000000, $alpha: 0.2);
+    .cnCardHeader{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 60px;
+        padding-left: 30px;
+        background-color: aliceblue;
+    }
+    .cnCardImage{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .cnCardButtons{
+        display: flex;
+        padding: 10px;
+
+    }
+    .cnCardLikes{
+        font-size: 14px;
+        font-weight: 600;
+        padding: 10px;
+    }
+    .cnCardComments{
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px 10px 10px;
+    }
+    .cnCardMyComment{
+        border: none;
+        background-color: aliceblue;
+        padding: 10px;
+        outline: none;
+        resize: none;
+    }
+    .cnCardLikeIcon{
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .cnCardCommentsIcon{
+        cursor: pointer;
+
+    }
+}
+
+   
+   
