@@ -1,0 +1,19 @@
+.cnMainPageRoot {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cnMainPageCard {
+    margin-bottom: 10px;
+}
+
+.cnMainPageLoaderContainer{
+    display: flex;
+    // height: 100vh;
+    // width: 100vw;
+    align-items: center;
+    justify-content: center;
+}

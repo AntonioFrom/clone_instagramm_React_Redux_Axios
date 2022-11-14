@@ -11,7 +11,7 @@ import {useNavigate} from 'react-router-dom'
     }
   return (
     <div className='cnUserBadgeRoot' onClick={onUserBadgeClick}>
-      { avatarUrl ? <img src={{avatarUrl}} alt="logo" className='cnUserBadgeAvatar' /> : <div className='cnUserBadgeAvatarDefault'/>}
+      { avatarUrl ? <img src={avatarUrl} alt="logo" className='cnUserBadgeAvatar' /> : <div className='cnUserBadgeAvatarDefault'/>}
       <span  className='cnUserBadgeName'>{nickName}</span> 
     </div>
 

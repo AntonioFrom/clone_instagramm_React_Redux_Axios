@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import UserBadge from '../UserBadge'
+import cn from "classnames"
 import './style.scss'
 import { FcLike, FcLikePlaceholder, FcComments } from "react-icons/fc";
 import Comment from '../Comment';
@@ -11,7 +12,8 @@ export const Card = ({
     imgUrl,
     likes,
     isLikeByYou,
-    comments
+    comments,
+    className,
 }) => {
     
     const [isCommentShow, setIsCommentShow] = useState(false)
@@ -38,7 +40,7 @@ export const Card = ({
     }
 
     return (
-        <div className='cnCardRoot'>
+        <div className={cn('cnCardRoot', className)}>
             <div className='cnCardHeader'>
                 <UserBadge nickName={nickName} avatarUrl={avatarUrl} id={id} />
             </div>
